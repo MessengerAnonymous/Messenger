@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/6830/6830366.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anonymous Messenger</title>
+</head>
+
+<body>
+    <script src="./index.js"></script>
+    <div class="menu">
+        <p style="text-align: center;">
+            <img src="https://cdn-icons-png.flaticon.com/128/6830/6830366.png" alt="logo" height="70px">
+
+        </p>
+        <p style="font-size: larger; text-align: center;">AnonymousMessenger</p>
+        <br>
+
+        <p id="user" style="text-align: center;">
+            ------
+        </p>
+
+        <button onclick="send()" style="margin-left: 40px;">
+            <img src="https://cdn-icons-png.flaticon.com/128/9333/9333991.png" alt="logo" height="30px">
+        </button>
+    </div>
+    <!--  -->
+    <p style="text-align: center;">
+        <div id="body" style="
+        overflow-y: auto;
+max-height: 300px; 
+
+        padding: 10px; margin-left: 30px; height: 300px; width: 280px; border: none black; border-radius: 20px; background-color: aliceblue;
+                  box-shadow: 10px 10px 100px;"></div>
+    </p>
+
+    <p style="text-align: center;">
+        <input id="input" type="text" class="menu" style=" font-family: font; text-align: center; padding: 15px; margin-left: -40px; margin-top: 3.5rem; padding-left: 40px; padding-right: 70px;" id="text">
+    </p>
+
+    <dialog class="menu" id="waiting" style="margin-left: 10px; padding: 20px; margin-top: 200px;">
+        <p style="text-align: center;">
+            En attente d'Utilisateur avec lequel parler. Si vous voulez parlez avec une perssone specifique evoyer lui ce lien:
+            <p style="text-align: center;" style="font-size: smaller;">
+                https://messengeranonymous.github.io/Messenger
+            </p>
+            <p style="text-align: center;">
+                <img src="https://cdn-icons-png.flaticon.com/128/7794/7794282.png" alt="loading" height="50px" style="animation:  loading 1s infinite linear;">
+            </p>
+        </p>
+    </dialog>
+</body>
+
+</html>
